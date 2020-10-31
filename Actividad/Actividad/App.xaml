@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Actividad.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="Crear">#34C759</Color>
+            <Color x:Key="Editar">#007AFF</Color>
+            <Color x:Key="Limpiar">Coral</Color>
+            <Color x:Key="Texto">White</Color>
+            <x:String x:Key="EmojiBasura">&#x1f5d1;&#xfe0f;</x:String>
+
+            <Style x:Key="BotonAgregar" TargetType="Button">
+                <Setter Property="Margin" Value="2" />
+                <Setter Property="TextColor" Value="{DynamicResource Texto}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource Crear}" />
+            </Style>
+
+            <Style x:Key="BotonEditar" TargetType="Button">
+                <Setter Property="TextColor" Value="{DynamicResource Texto}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource Editar}" />
+                <Setter Property="Margin" Value="2" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style x:Key="BotonLimpiar" TargetType="Button">
+                <Setter Property="TextColor" Value="{DynamicResource Texto}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource Limpiar}" />
+                <Setter Property="Margin" Value="2" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style x:Key="BotonBorrar" TargetType="Button">
+                <Setter Property="TextColor" Value="Crimson" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="FontSize" Value="30" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+
+            <Style x:Key="Datos" TargetType="StackLayout">
+                <Setter Property="Margin" Value="2, 10" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="StartAndExpand" />
+            </Style>
+
+            <Style x:Key="PropiedadDatos" TargetType="StackLayout">
+                <Setter Property="Margin" Value="1" />
+                <Setter Property="Orientation" Value="Horizontal" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="EtiquetasDatos" TargetType="Label">
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            </Style>
+
+            <Style x:Key="Formulario" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="Padding" Value="10" />
+            </Style>
+
+            <Style x:Key="CajasTextoDatos" TargetType="Entry">
+                <Setter Property="Margin" Value="2,2,2,5" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Material Design Icons" />
+                <On Platform="Android" Value="MaterialDesignIcons.ttf#Material Design Icons" />
+                <On Platform="UWP" Value="Assets/Fonts/MaterialDesignIcons.ttf#Material Design Icons" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeBrands" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Font Awesome 5 Brands" />
+                <On Platform="Android" Value="FontAwesome5BrandsRegular.ttf#Font Awesome 5 Brands" />
+                <On Platform="UWP" Value="Assets/Fonts/FontAwesome5BrandsRegular.ttf#Font Awesome 5 Brands" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeDuotone" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Font Awesome 5 Duotone" />
+                <On Platform="Android" Value="FontAwesome5Duotone.ttf#Font Awesome 5 Duotone" />
+                <On Platform="UWP" Value="Assets/Fonts/FontAwesome5Duotone.ttf#Font Awesome 5 Duotone" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeLight" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Font Awesome 5 Pro Light" />
+                <On Platform="Android" Value="FontAwesome5Light.ttf#Font Awesome 5 Pro" />
+                <On Platform="UWP" Value="Assets/Fonts/FontAwesome5Light.ttf#Font Awesome 5 Pro" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeRegular" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Font Awesome 5 Pro" />
+                <On Platform="Android" Value="FontAwesome5Regular.ttf#Font Awesome 5 Pro" />
+                <On Platform="UWP" Value="Assets/Fonts/FontAwesome5Regular.ttf#Font Awesome 5 Pro" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeSolid" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Font Awesome 5 Pro Solid" />
+                <On Platform="Android" Value="FontAwesome5Solid.ttf#Font Awesome 5 Pro" />
+                <On Platform="UWP" Value="Assets/Fonts/FontAwesome5Solid.ttf#Font Awesome 5 Pro" />
+            </OnPlatform>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
